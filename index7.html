@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/conv.css">
+<link rel="stylesheet" href="css/style.css">
+  <title>Multi Converter</title>
+</head>
+<body>
+  
+<br>
+
+<div>
+  <img class="head1" src="images/head1.jpg">
+</div>
+<hr>
+<div class="botton">
+  <a href="index.html"><button class="btn2 success2">Home</button></a>
+  <a href="index1.html"><button class="btn2 info2">Mechnical</button></a>
+  <a href="index2.html"><button class="btn2 warning2">Elctrical</button></a>
+  <a href="index3.html"><button class="btn2 danger2">Elctro-mechnocal</button></a>
+  <a href="index4.html"><button class="btn2 success2">PLC</button></a>
+  <a href="index5.html"><button class="btn2 info2">Programing</button></a>
+  <a href="index6.html"><button class="btn2 warning2">General</button></a>
+  <a href="index7.html"><button class="btn2 success2">Multi Converter</button></a>
+  <a href="index8.html"><button class="btn2 info2">Q & A</button></a>
+  <a href="index100.html"><button class="btn2 warning2">Test Page</button></a>
+  </div>
+<hr>
+<div style="text-align:center; display:block;">
+  <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/995467/t/9"></script>
+</div>
+<hr>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+   Please notice, this Site it will be in update periodically..<br>
+  <h3 style="color: yellow;">Last updated was 01/09/2023</h3>
+</div>
+<hr>
+    <div class="container">
+           <h1>Temperature Converter</h1>
+        <div class="converter-row">
+            <div class="col">
+                <label>Fahrenheit</label>
+                <input type="number" id="fahrenheit">
+            </div>
+      
+            <div class="col">
+                <label>Celsius</label>
+                <input type="number" id="celsius">
+            </div>
+      
+            <div class="col">
+                <label>Kelvin</label>
+                <input type="number" id="kelvin">
+            </div>
+        </div>
+        <br>
+    <hr>
+
+
+        <div>
+            <br>
+            <h1>Resistors Color Code</h1>
+            <br>
+        <table class="tbl">
+            <tr align="center">
+              <td>Band 1</td>
+              <td>Band 2</td>
+              <td>Band 3</td>
+              <td></td>
+              <td>Band 4</td>
+            </tr>
+          
+            <tr align="center">
+              <td>Value 1</td>
+              <td>Value 2</td>
+              <td>Weight</td>
+              <td></td>
+              <td>Tolerance</td>
+            </tr>
+        
+            <tr>
+              <form name="colorSelect" method="" action="">
+                <td><select name="band1" value="1" onChange="calcResistance(this)" style="width: 150px; color: white; background: #583030;">
+                    <option value="0" style="color: white; background: black;">Black (0)</option>
+                    <option value="1" style="color: white; background: #583030;" selected>Brown (1)</option>
+                    <option value="2" style="color: white; background: red;">Red (2)</option>
+                    <option value="3" style="color: black; background: orange;">Orange (3)</option>
+                    <option value="4" style="color: black; background: yellow;">Yellow (4)</option>
+                    <option value="5" style="color: white; background: green;">Green (5)</option>
+                    <option value="6" style="color: white; background: blue;">Blue (6)</option>
+                    <option value="7" style="color: white; background: purple;">Violet (7)</option>
+                    <option value="8" style="color: white; background: gray;">Gray (8)</option>
+                    <option value="9" style="color: black; background: white;">White (9)</option>
+                  </select></td>
+                <td><select name="band2" value="0" onChange="calcResistance(this)" style="width: 150px; color: white; background: black;">
+                    <option value="0" style="color: white; background: black;" selected>Black (0)</option>
+                    <option value="1" style="color: white; background: #583030;">Brown (1)</option>
+                    <option value="2" style="color: white; background: red;">Red (2)</option>
+                    <option value="3" style="color: black; background: orange;">Orange (3)</option>
+                    <option value="4" style="color: black; background: yellow;">Yellow (4)</option>
+                    <option value="5" style="color: white; background: green;">Green (5)</option>
+                    <option value="6" style="color: white; background: blue;">Blue (6)</option>
+                    <option value="7" style="color: white; background: purple;">Violet (7)</option>
+                    <option value="8" style="color: white; background: gray;">Gray (8)</option>
+                    <option value="9" style="color: black; background: white;">White (9)</option>
+                  </select></td>
+                <td><select name="band3" value="2" onChange="calcResistance(this)" style="width: 150px; color: white; background: red;">
+                    <option value="0" style="color: white; background: black;" selected>Black (1)</option>
+                    <option value="1" style="color: white; background: #583030;">Brown (10)</option>
+                    <option value="2" style="color: white; background: red;" selected>Red (100)</option>
+                    <option value="3" style="color: black; background: orange;">Orange (1k)</option>
+                    <option value="4" style="color: black; background: yellow;">Yellow (10k)</option>
+                    <option value="5" style="color: white; background: green;">Green (100k)</option>
+                    <option value="6" style="color: white; background: blue;">Blue (1M)</option>
+                    <option value="7" style="color: white; background: purple;">Violet (10M)</option>
+                    <option value="8" style="color: white; background: gray;">Gray (100M)</option>
+                    <option value="9" style="color: black; background: white;">White (1G)</option>
+                  </select></td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td><select name="band4" value="0" onChange="calcResistance(this)" style="width: 150px; color: black; background: gold; size:5;">
+                    <option value="10" style="color: black; background: gold;">Gold (&plusmn; 5%)</option>
+                    <option value="11" style="color: black; background: silver;">Silver (&plusmn; 10%)</option>
+                  </select></td>
+            </tr>
+            <tr>
+              <font size="24">
+                <center>
+                  <td colspan="2" align="right">
+                    <h4>Resistance:&nbsp;&nbsp;</h4>
+                  </td>
+                  <td colspan="3" align="left">
+                    <h4><text id="resistorValue">1,000 &ohm; &plusmn;5%</text></h4>
+                  </td>
+                </center>
+              </font>
+            </tr>
+            </form>
+          </table>
+        </div>
+        <br>
+        <hr>
+
+         <script type="text/javascript" src="javascript/java.js"></script>
+    </div>
+</body>
+</html>

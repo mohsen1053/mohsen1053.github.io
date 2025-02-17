@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 92%;
+    /* Table Size */
+    border: 2px solid orange;
+    /* External Table Border */
+    border-spacing: 5px;
+    /* size of the lines beteewn the cells */
+    margin-left: 5%;
+    /* Table Alighment Left */
+    margin-right: 5%;
+    /* Table Alighment Right */
+    /*  border-collapse: collapse;*/
+    /* Removing border Duplicated from the Table */
+
+}
+
+
+table th {
+    height: 75px;
+    /* Hight of the Header Row */
+   /* background-color: rgb(105, 27, 27);*/
+    /* Head Ror Color */
+    /*border: 3px solid orange;*/
+    /* Heared Row Cells Border Color */
+    color: white; 
+    /* Head Text Color */
+    font-size: 25px;
+    /* Head Text Size */
+    text-align: center;
+    /* font position (Left, Right or Center) */
+    background-color: rgb(119, 31, 31);
+}
+
+table td {
+    padding: 5px;
+    /* Row Hight */
+   /* background-color: rgb(194, 189, 189);
+    /* Row Color */
+    border: 2px solid blue;
+    /* Data Row Cells Border Color */
+    text-align: left;
+    /* font position (Left, Right or Center) */
+    vertical-align: middle;
+    /* Header Font Align it can be Top, Middle or Bottom */
+    height: 35px;
+    /* Data Row Hight */
+ 
+
+}
+
+tr:hover {
+      background-color: aqua; /* Row Hover */
+}
+
+tr:nth-child(odd) {
+      background-color: white; /*(Odd Row Color) */
+}
+
+tr:nth-child(even) {
+      background-color: rgb(240, 219, 191);/* (Even Row Color) */
+}
+
+tr:hover {
+    background-color: aqua; /* Row Hover */
+}
