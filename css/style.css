@@ -1,6 +1,6 @@
 .head1 {
     border: solid 5px orange ;
-    width: 92%;
+    width: 93%;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -76,7 +76,7 @@
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    width: 88%;
+    width: 90%;
     font-size: 22px;
   }
   /* The close button */
@@ -91,11 +91,11 @@
   transition: 3.5s;
 }
   .video {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 55px;
+    margin-right: 50x;
   }
   .this {
-    width: 91%;
+    width: 95%;
     background-color: black;
     color: white;
     margin-left: 50px;
@@ -104,9 +104,12 @@
   }
   .penglish {
     margin-left: 50px;
+    font-size: 25px;
+    text-align: justify;
   }
   .parabic {
     text-align: right;
+    font-size: 25px;
     margin-right: 50px;
   }
   h1 {
@@ -117,7 +120,9 @@
     color: blue;
     font-size: 40px;
     margin-left: 300px;
-
+}
+h3{
+  color: blue;
 }
   .me {
     display: block;
